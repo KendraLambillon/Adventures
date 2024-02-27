@@ -1,0 +1,122 @@
+/*CONTACT*/
+
+/*HEADER*/
+.header{
+    background-image: url(../assets/img/llamas-0.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img-logo {
+    width: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu_header:hover {
+    text-decoration: underline 3px #ffca2c;
+    transform: scale(1.5);
+}
+
+.menu_header:active {
+    text-decoration: underline 3px #ffca2c;
+    transform: scale(1.5);
+}
+
+/*Tapar la linea que nos sobra del header*/
+.linear-white::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/*Poner altura*/
+.vh-50 {
+    height: 50vmin;
+}
+
+/*NAVLINKS- ACTIVE*/
+.nav__link:is(:link, :active, :visited).active {
+    background-color: #ffca2c;
+    padding: 5px;
+}
+
+/*VALIDATION FORM*/
+small{
+    background-color: #e74d3c;
+    border-radius: .5rem;
+    padding: 3px;
+    color: white;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
+}
+
+.form-item.success input{
+    border-color: rgb(47, 255, 78);
+}
+
+.form-item.error input{
+    border-color: red;
+}
+
+.form-item.error small{
+    visibility: visible;
+}
+
+/*MAP*/
+#map {
+    height: 70vh;
+    margin-bottom: 100px;
+}
+
+/*END OF IMAGE SECTION*/
+.image-end {
+    background-image: url(../assets/img/bg-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*Sacar la linea*/
+.image-end.linear-white::after{
+    top: 0;
+}
+
+.transform-turn {
+    transform: rotate(.5turn);
+}
+
+/*FOOTER*/
+.social-media>a {
+    padding-right: 20px;
+}
+
+.rights > p{
+    color: #8a8b8d;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 320px) {
+    .vh-50 {
+        height: 60vmax;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .vh-50 {
+        height: 60vmax;
+    }
+}
